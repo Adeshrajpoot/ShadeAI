@@ -225,18 +225,6 @@ with st.sidebar:
 
     st.header("Routing")
 
-    shade_priority = st.slider(
-        "Shade priority",
-        min_value=1.0,
-        max_value=10.0,
-        value=4.0,
-        step=0.5,
-        help=(
-            "Edge cost = length × (1 + priority × (1 − shade)). "
-            "Higher values accept longer detours to stay in shade."
-        ),
-    )
-
     walking_speed_kmh = st.slider(
         "Walking speed (km/h)",
         min_value=3.0,
